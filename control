@@ -1,0 +1,22 @@
+Source: essential-moos
+Priority: optional
+Maintainer: Kyle Fazzari <kyrofa@ubuntu.com>
+Uploaders: Kamal Mostafa <kamal@whence.com>
+Build-Depends: cmake (>= 2.8.0),
+               debhelper (>=9),
+               libmoos-dev
+Standards-Version: 4.1.0
+Section: libs
+Homepage: http://www.robots.ox.ac.uk/~mobile/MOOS/wiki/pmwiki.php/Main/HomePage
+Vcs-Git: https://github.com/themoos/essential-moos.git
+Vcs-Browser: https://github.com/themoos/essential-moos
+
+Package: essential-moos
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libmoos10
+Description: A set of useful applications for MOOS projects
+ These useful applications include: pLogger, used for logging data sent
+ between applications; pScheduler, used for scheduling and translating data
+ sent between applications; pAntler, used for starting a whole set of
+ applications; pMOOSBridge, used to map data between multiple groups of
+ applications.
